@@ -1,0 +1,248 @@
+body {
+    background-color: #eee;
+}
+
+.center {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.item-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item {
+    width: 260px;
+    border-radius: 24px;
+    overflow: hidden;
+    background-color: white;
+    position: relative;
+    margin: 0 20px;
+    transition: 0.5s;
+}
+
+.item:hover {
+    transform: scale(1.05);
+}
+
+figure {
+    margin: 0;
+    width: 100%;
+}
+
+figure img {
+    width: 100%;
+    display: block;
+}
+
+.more-btn {
+    width: 36px;
+    height: 36px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    background: #fff url(../img/icon-more.svg) no-repeat center;
+    background-size: 24px;
+    border-radius: 50%;
+}
+
+.item-text {
+    padding: 20px;
+}
+
+.profile-info {
+    position: relative;
+    height: 48px;
+
+}
+
+.profile-info .profile-img {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: #139b5b url(../img/logo2.png) no-repeat center;
+    background-size: 80px;
+    float: left;
+    margin-right: 10px;
+}
+
+.profile-info h1 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 4px;
+    padding-top: 8px;
+
+}
+
+.profile-info p {
+    font-size: 14px;
+    color: #717D8D;
+}
+
+.profile-count {
+    clear: both;
+    margin: 20px 0;
+    padding-bottom: 25px;
+    padding-top: 25px;
+}
+
+.profile-count {
+    font-size: 0;
+    /* 모양을 잡기 위한 */
+    text-align: center;
+}
+
+.profile-count li {
+    display: inline-block;
+    width: 33.333%;
+}
+
+.count-value {
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: bold;
+    margin-bottom: 2px;
+}
+
+.count-label {
+    color: #8F97AE;
+    font-size: 12px;
+}
+
+.follow-btn {
+    position: relative;
+    background-color: #031772c4;
+    width: 100%;
+    border-radius: 18px;
+    height: 36px;
+    border: 0;
+    color: white;
+    text-align: left;
+    padding: 0 16px;
+}
+
+a,
+button {
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.follow-btn:hover {
+    box-shadow: 0 4px 16px rgba(0, 79, 255, 0.3);
+}
+
+.icon-add {
+    position: absolute;
+    right: 16px;
+    top: 10px;
+    display: block;
+    width: 16px;
+    height: 16px;
+    background: url(../img/icon-plus.svg) no-repeat center;
+    background-size: contain;
+    transform: rotate(0);
+    transition: 0.3S;
+}
+
+.follow-btn:hover .icon-add {
+    transform: rotate(90deg);
+}
+
+.all-view-btn {
+    margin: auto;
+    margin-top: 20px;
+    display: block;
+    text-align: center;
+    font-size: 14px;
+    color: #2E7CD9;
+    text-decoration: none;
+}
+
+.all-view-btn:hover {
+    text-decoration: underline;
+}
+
+.item-head {
+    position: relative;
+    padding: 20px;
+}
+
+.item-head h2 {
+    font-size: 20px;
+    line-height: 32px;
+    padding-right: 88px;
+    font-weight: bold;
+}
+
+.all-btn {
+    float: right;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 88px;
+    height: 32px;
+    font-size: 13px;
+    text-align: left;
+    border: 1px solid #EEEEEE;
+    background-color: #fff;
+    border-radius: 4px;
+    padding: 6px;
+}
+
+.icon-arrow {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 32px;
+    height: 32px;
+    background: url(../img/icon-arrow-right.svg) no-repeat center;
+    background-size: 20px;
+}
+
+.user-list {
+    position: relative;
+    padding: 0 20px;
+    margin-bottom: 20px;
+}
+
+.user-list img {
+    position: absolute;
+    left: 20px;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+}
+
+.user-info {
+    min-height: 64px;
+    padding-left: 74px;
+}
+
+.user-name {
+    font-size: 14px;
+    margin-bottom: 4px;
+}
+
+.follower-info {
+    font-size: 12px;
+    color: #969696;
+    margin-bottom: 4px;
+}
+
+.user-info .follow-btn {
+    padding: 0 10px;
+    padding-left: 24px;
+    width: auto;
+    height: 28px;
+    border-radius: 4px;
+}
+
+.user-info .icon-add {
+    left: 4px;
+    top: 6px;
+}
